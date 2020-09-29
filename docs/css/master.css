@@ -1,0 +1,130 @@
+:root{
+  --background-color: #313131;
+  --secondary-background-color: #525252;
+
+  --textarea-background-color: #fff;
+
+  --emphasis-color: #ca3e47;
+  --secondary-emphasis-color: #e64750;
+
+  --font-color: white;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.courier-prime{
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Static */
+
+h1{
+  font-size: 25px;
+}
+
+body{
+  color: var(--font-color);
+  font-family: 'Courier Prime', monospace;
+}
+
+hr{
+  border-color: var(--emphasis-color);
+}
+
+ul{
+  list-style:none;
+  padding: 0;
+}
+
+input{
+  width: 100%;
+  border: none;
+}
+
+.btn{
+  border-radius: 0px !important;
+}
+
+/* Classes and selectors */
+
+.h-100{
+  height: 100vh !important;
+}
+
+.bg-primary{
+  background-color: var(--background-color) !important;
+}
+
+.bg-secondary{
+  background-color: var(--secondary-background-color) !important;
+}
+
+.emphasis{
+  color: var(--emphasis-color);
+}
+
+.title{
+  background-color: var(--emphasis-color);
+
+  padding: 15px;
+}
+
+.left-pane{
+  background-color: var(--background-color);
+
+  padding: 15px;
+}
+
+.right-pane{
+  background-color: var(--secondary-background-color);
+
+  padding: 15px;
+}
+
+.tool-pane{
+  background-color: var(--secondary-emphasis-color);
+
+  padding: 15px;
+}
+
+.textarea {
+  width: 100%;
+  background-color: var(--textarea-background-color);
+  color: black;
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+#code-list{
+  overflow-x: auto;
+}
+
+/* Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--secondary-background-color);
+  margin: 15% auto; /* 15% from the top and centered */
+  border: none;
+  border-radius: 0;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
